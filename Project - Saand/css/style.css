@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #2193b0, #6dd5ed);
+    color: #ffffff;
+    text-align: center;
+}
+
+header {
+    background-color: #0288d1;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+/* Search Section */
+#search {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#location {
+    padding: 0.7rem;
+    font-size: 1rem;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    background-color: #ffa726;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff7043;
+}
+
+/* Weather Display Section */
+#weatherDisplay {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    width: 80%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+#weatherDisplay h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+#weatherDisplay p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+#weatherDisplay .icon {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#weatherDisplay img {
+    max-width: 80px;
+}
+
+/* Footer Section */
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #cccccc;
+    background-color: #1e88e5;
+    text-align: center;
+}
+
+footer a {
+    color: #ffcc80;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    #location {
+        width: 200px;
+    }
+
+    #weatherDisplay {
+        width: 90%;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+}
